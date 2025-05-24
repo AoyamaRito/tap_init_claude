@@ -1,0 +1,45 @@
+name: Claude Code CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  claude-code-analysis:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Install Claude Code CLI
+      run: npm install -g @anthropic-ai/claude-code
+      
+    - name: Run Claude Code analysis
+      env:
+        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        CLAUDE_CODE_MODEL: claude-4-20250514
+      run: |
+        claude-code --version
+        # Add your Claude Code commands here
+        # Example: claude-code analyze --path ./src
+        
+    - name: Upload results
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: claude-code-results
+        path: |
+          *.log
+          reports/
