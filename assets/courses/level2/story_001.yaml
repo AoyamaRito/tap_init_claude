@@ -1,0 +1,67 @@
+course:
+  id: story_001
+  title: The Little Red Riding Hood
+  description: Classic fairy tale adapted for English learning
+  level: 2
+  category: story
+  sentences:
+    - text: Once upon a time
+      level: 2
+      category: story
+    - text: There lived a girl
+      level: 2
+      category: story
+    - text: She wore red hood
+      level: 2
+      category: story
+    - text: Her grandmother was sick
+      level: 2
+      category: story
+    - text: She walked through forest
+      level: 2
+      category: story
+    - text: The wolf saw her
+      level: 2
+      category: story
+    - text: Where are you going
+      level: 2
+      category: story
+    - text: To visit my grandmother
+      level: 2
+      category: story
+    - text: Wolf ran to house
+      level: 2
+      category: story
+    - text: He knocked on door
+      level: 2
+      category: story
+    - text: Who is there please
+      level: 2
+      category: story
+    - text: It is your granddaughter
+      level: 2
+      category: story
+    - text: Come in my dear
+      level: 2
+      category: story
+    - text: Wolf ate the grandmother
+      level: 2
+      category: story
+    - text: He put on clothes
+      level: 2
+      category: story
+    - text: Girl arrived at house
+      level: 2
+      category: story
+    - text: What big eyes you
+      level: 2
+      category: story
+    - text: What big teeth too
+      level: 2
+      category: story
+    - text: Hunter came to rescue
+      level: 2
+      category: story
+    - text: They lived happily ever
+      level: 2
+      category: story

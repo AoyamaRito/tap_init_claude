@@ -1,0 +1,67 @@
+course:
+  id: greeting_001
+  title: Basic Greetings
+  description: Common greeting expressions for everyday use
+  level: 1
+  category: greeting
+  sentences:
+    - text: Hello there friend
+      level: 1
+      category: greeting
+    - text: Good morning everyone
+      level: 1
+      category: greeting
+    - text: Good afternoon sir
+      level: 1
+      category: greeting
+    - text: Good evening madam
+      level: 1
+      category: greeting
+    - text: How are you
+      level: 1
+      category: greeting
+    - text: I am fine
+      level: 1
+      category: greeting
+    - text: Nice to meet
+      level: 1
+      category: greeting
+    - text: Pleased to know
+      level: 1
+      category: greeting
+    - text: Welcome to here
+      level: 1
+      category: greeting
+    - text: Have nice day
+      level: 1
+      category: greeting
+    - text: See you soon
+      level: 1
+      category: greeting
+    - text: Take care now
+      level: 1
+      category: greeting
+    - text: Goodbye for now
+      level: 1
+      category: greeting
+    - text: Until next time
+      level: 1
+      category: greeting
+    - text: What is name
+      level: 1
+      category: greeting
+    - text: My name is
+      level: 1
+      category: greeting
+    - text: Where are from
+      level: 1
+      category: greeting
+    - text: I come from
+      level: 1
+      category: greeting
+    - text: How old are
+      level: 1
+      category: greeting
+    - text: I am years
+      level: 1
+      category: greeting

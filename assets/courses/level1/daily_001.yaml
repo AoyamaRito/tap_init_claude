@@ -1,0 +1,67 @@
+course:
+  id: daily_001
+  title: Daily Conversation Basics
+  description: Essential daily conversation phrases for beginners
+  level: 1
+  category: daily
+  sentences:
+    - text: This is a pen
+      level: 1
+      category: daily
+    - text: I am happy
+      level: 1
+      category: daily
+    - text: You are kind
+      level: 1
+      category: daily
+    - text: We love music
+      level: 1
+      category: daily
+    - text: They play games
+      level: 1
+      category: daily
+    - text: She reads books
+      level: 1
+      category: daily
+    - text: He drinks coffee
+      level: 1
+      category: daily
+    - text: It is sunny
+      level: 1
+      category: daily
+    - text: Good morning today
+      level: 1
+      category: daily
+    - text: Nice to meet
+      level: 1
+      category: daily
+    - text: How are you
+      level: 1
+      category: daily
+    - text: Thank you much
+      level: 1
+      category: daily
+    - text: See you later
+      level: 1
+      category: daily
+    - text: Have a day
+      level: 1
+      category: daily
+    - text: What is this
+      level: 1
+      category: daily
+    - text: Where are we
+      level: 1
+      category: daily
+    - text: When do go
+      level: 1
+      category: daily
+    - text: Why not try
+      level: 1
+      category: daily
+    - text: Who is there
+      level: 1
+      category: daily
+    - text: Please help me
+      level: 1
+      category: daily

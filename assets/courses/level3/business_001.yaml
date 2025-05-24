@@ -1,0 +1,67 @@
+course:
+  id: business_001
+  title: Office Communication
+  description: Professional communication phrases for workplace
+  level: 3
+  category: business
+  sentences:
+    - text: I would like to schedule
+      level: 3
+      category: business
+    - text: Could you please send report
+      level: 3
+      category: business
+    - text: The meeting starts at nine
+      level: 3
+      category: business
+    - text: Please review the attached document
+      level: 3
+      category: business
+    - text: I need to finish project
+      level: 3
+      category: business
+    - text: The deadline is next Friday
+      level: 3
+      category: business
+    - text: We should discuss budget allocation
+      level: 3
+      category: business
+    - text: The client wants immediate response
+      level: 3
+      category: business
+    - text: Could we postpone the conference
+      level: 3
+      category: business
+    - text: I will prepare the presentation
+      level: 3
+      category: business
+    - text: Please confirm your attendance today
+      level: 3
+      category: business
+    - text: The sales figures look promising
+      level: 3
+      category: business
+    - text: We need to increase productivity
+      level: 3
+      category: business
+    - text: The marketing strategy needs revision
+      level: 3
+      category: business
+    - text: Please update the database immediately
+      level: 3
+      category: business
+    - text: I recommend hiring new staff
+      level: 3
+      category: business
+    - text: The quarterly results exceeded expectations
+      level: 3
+      category: business
+    - text: We must improve customer service
+      level: 3
+      category: business
+    - text: The proposal requires board approval
+      level: 3
+      category: business
+    - text: Thank you for your cooperation
+      level: 3
+      category: business
