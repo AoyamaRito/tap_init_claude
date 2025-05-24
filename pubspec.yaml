@@ -11,14 +11,20 @@ dependencies:
   flutter:
     sdk: flutter
   
+  # State Management
+  provider: ^6.1.1
+  
+  # Audio/TTS
+  flutter_tts: ^4.0.2
+  
+  # Local Storage
+  shared_preferences: ^2.2.2
+  
+  # Ads
+  google_mobile_ads: ^5.0.0
+  
   # UI
   material_symbols_icons: ^4.2719.3
-  
-  # State Management (選択予定)
-  provider: ^6.1.1
-  # riverpod: ^2.4.9
-  
-  # Development
   cupertino_icons: ^1.0.6
 
 dev_dependencies:
