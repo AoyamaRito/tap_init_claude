@@ -1,0 +1,46 @@
+name: tap_init_claude
+description: "Flutter Android app with Claude Code autonomous development"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI
+  material_symbols_icons: ^4.2719.3
+  
+  # State Management (選択予定)
+  provider: ^6.1.1
+  # riverpod: ^2.4.9
+  
+  # Development
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # Linting
+  flutter_lints: ^3.0.0
+  
+  # Testing
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  # Assets
+  # assets:
+  #   - images/
+
+  # Fonts
+  # fonts:
+  #   - family: Custom
+  #     fonts:
+  #       - asset: fonts/Custom-Regular.ttf

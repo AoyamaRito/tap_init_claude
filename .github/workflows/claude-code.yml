@@ -14,14 +14,22 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
       
-    - name: Setup Node.js
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.19.0'
+        cache: true
+        
+    - name: Setup Node.js for Claude Code
       uses: actions/setup-node@v4
       with:
         node-version: '20'
-        cache: 'npm'
         
-    - name: Install dependencies
-      run: npm ci
+    - name: Install Flutter dependencies
+      run: flutter pub get
+      
+    - name: Run Flutter analyzer
+      run: flutter analyze
       
     - name: Install Claude Code CLI
       run: npm install -g @anthropic-ai/claude-code
@@ -32,11 +40,17 @@ jobs:
         CLAUDE_CODE_MODEL: claude-4-20250514
       run: |
         claude-code --version
-        # 仕様書を読み込んで自律的な開発タスクを実行
-        claude -p "CLAUDE.mdの仕様書を読んで、現在のプロジェクト状況を分析し、次にやるべき開発タスクを優先順位付きで提案して"
-        claude -p "仕様書に基づいてコードの品質をチェックし、改善提案をして"
-        claude -p "セキュリティ要件に沿って脆弱性をチェックして"
-        claude -p "仕様書の開発方針に従ってテスト戦略を提案して"
+        # Flutter アプリ開発に特化した自律的開発タスク
+        claude -p "CLAUDE.mdのFlutterアプリ仕様書を読んで、現在のプロジェクト状況を分析し、次にやるべき開発タスクを優先順位付きで提案して"
+        claude -p "Dart/Flutterのベストプラクティスに基づいてコード品質をチェックし、改善提案をして"
+        claude -p "Flutterアプリのパフォーマンス（60fps維持、起動時間最適化）をチェックして"
+        claude -p "Material Design 3に準拠したUI/UX改善提案をして"
+        claude -p "モバイルアプリのセキュリティベストプラクティスに沿ってチェックして"
+        claude -p "ユニットテスト、ウィジェットテスト、統合テストの戦略を提案して"
+        
+    - name: Run Flutter tests
+      run: flutter test
+      continue-on-error: true
         
     - name: Upload results
       if: always()
