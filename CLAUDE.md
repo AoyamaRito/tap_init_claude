@@ -24,6 +24,8 @@
 5. TODO管理と次のタスクの自動提案
 
 ### 開発ルール
+- **開発手法**: TDD（Test-Driven Development）を採用
+- **テスト戦略**: Red-Green-Refactor サイクルの徹底
 - **コード品質**: Dart/Flutter のベストプラクティスに従う
 - **UI/UX**: Material Design 3 を基本とする
 - **状態管理**: 選択した状態管理パターンを一貫して使用
