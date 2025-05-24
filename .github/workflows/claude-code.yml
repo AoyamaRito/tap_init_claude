@@ -32,8 +32,12 @@ jobs:
         CLAUDE_CODE_MODEL: claude-4-20250514
       run: |
         claude-code --version
-        # Add your Claude Code commands here
-        # Example: claude-code analyze --path ./src
+        # 自律的な開発タスク
+        claude -p "プロジェクトを分析してTODOリストを作成し、次にやるべき開発タスクを提案して"
+        claude -p "コードの品質をチェックして改善提案をして"
+        claude -p "テストカバレッジを確認し、不足している部分のテストを作成して"
+        claude -p "セキュリティの脆弱性をチェックして"
+        claude -p "パフォーマンス改善の提案をして"
         
     - name: Upload results
       if: always()
