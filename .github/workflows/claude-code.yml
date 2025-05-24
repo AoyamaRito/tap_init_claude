@@ -28,7 +28,7 @@ jobs:
       
     - name: Run Claude Code analysis
       env:
-        CLAUDE_CODE_WORKSPACE: ${{ secrets.CLAUDE_CODE_WORKSPACE }}
+        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         CLAUDE_CODE_MODEL: claude-4-20250514
       run: |
         claude-code --version
